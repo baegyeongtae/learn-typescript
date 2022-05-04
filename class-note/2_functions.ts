@@ -13,3 +13,5 @@ function add(): number {
 function sum(a: number, b: number): number{
     return a + b;
 }
+
+sum(10, 20, 30, 40); // 불필요한 값을 넘기면 js와는 다르게 check함
