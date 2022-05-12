@@ -20,3 +20,19 @@ function logMessage(value: string | number) {
 
 logMessage('hello');
 logMessage(100);
+
+interface Developer {
+    name: string;
+    skill: string;
+}
+
+interface Person {
+    name: string;
+    age: number;
+}
+
+function askSomeone(someone: Developer | Person): void {
+    someone.name    // Union type을 설정했지만, safe하게 하기 위해서 (보장된) 공통된 타입으로만 지정이 가능하다.
+    someone.age     // 그냥 쓰기엔 unsafe
+    someone.skill   // 그래서 앞서 썼던 typeof ~ 처럼 guard를 사용하여 다시 사용할 수 있다.
+}
