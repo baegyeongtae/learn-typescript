@@ -4,10 +4,10 @@ interface User {
 }
 
 // 변수에 활용한 인터페이스
-let seho: User = { 
-    age: 33,
-    name: '세호'
-}
+// let seho: User = { 
+//     age: 33,
+//     name: '세호'
+// }
 
 //함수에 인터페이스 활용
 function getUser(user: User) {
@@ -58,10 +58,10 @@ Object.keys(obj).forEach(function (value) {
 
 
 // 인터페이스 확장
-interface Person {
-    name: string;
-    age: number;
-}
+// interface Person {
+//     name: string;
+//     age: number;
+// }
 
 interface Developer extends Person {
     language: string;
