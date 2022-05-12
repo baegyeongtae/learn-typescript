@@ -1,8 +1,11 @@
+// 인터페이스는 확장이 가능 하지만,
 // interface Person {
 //     name: string;
 //     age: number;
 // }
 
+
+// 타입은 확장이 불가능함!
 type Person = {
     name: string;
     age: number;
