@@ -11,10 +11,10 @@ type Person = {
     age: number;
 }
 
-let seho: Person = { 
-    name: '세호',
-    age: 30
-}
+// let seho: Person = { 
+//     name: '세호',
+//     age: 30
+// }
 
 type MyString = string;
 let str: MyString = 'hello';
