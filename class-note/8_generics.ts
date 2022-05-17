@@ -7,9 +7,26 @@
 // logText(true);
 
 
-function logText<T>(text: T): T {
+// function logText<T>(text: T): T {
+//     console.log(text);
+//     return text;
+// }
+// logText('하이');
+// logText<string>('하이');
+
+
+function logText(text: string) {
     console.log(text);
+    //text.split('').reverse().join('');
     return text;
 }
+
+function logNumber(num: number) {
+    console.log(num);
+    return num;
+}
+
+logText(10);
 logText('하이');
-logText<string>('하이');
+const num = logNumber(10);
+logText(true);
