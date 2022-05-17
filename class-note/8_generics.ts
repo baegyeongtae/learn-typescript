@@ -15,18 +15,19 @@
 // logText<string>('하이');
 
 
-function logText(text: string) {
+function logText(text: string | number) {
     console.log(text);
-    //text.split('').reverse().join('');
+    // text.split('').reverse().join('');
     return text;
 }
 
-function logNumber(num: number) {
-    console.log(num);
-    return num;
-}
+// function logNumber(num: number) {
+//     console.log(num);
+//     return num;
+// }
 
-logText(10);
+const a = logText(10);
+a.split('')
 logText('하이');
-const num = logNumber(10);
-logText(true);
+// const num = logNumber(10);
+// logText(true);
